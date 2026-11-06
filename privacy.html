@@ -3,60 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy ‚Äì Splitto</title>
+<title>Privacy – Splitto</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<nav><a href="index.html">‚Üê Splitto</a> ¬∑ <a href="#english">English</a></nav>
+<nav><a href="index.html">← Splitto</a> · <a href="#english">English</a></nav>
 
 <h1>Informativa sulla privacy</h1>
-<p class="muted">Splitto ¬∑ Ultimo aggiornamento: 5 novembre 2026</p>
+<p class="muted">Splitto · Ultimo aggiornamento: 5 novembre 2026</p>
 
-<p>Splitto √® un'app per dividere le spese tra amici, coinquilini e compagni di viaggio. Questa pagina spiega quali dati usa l'app, dove vengono salvati e chi pu√≤ vederli.</p>
+<p>Splitto è un'app per dividere le spese tra amici, coinquilini e compagni di viaggio. Questa pagina spiega quali dati usa l'app, dove vengono salvati e chi può vederli.</p>
 
 <h2>In breve</h2>
 <ul>
-<li>L'app non ha un server proprio, non mostra pubblicit√† e non traccia gli utenti.</li>
+<li>L'app non ha un server proprio, non mostra pubblicità e non traccia gli utenti.</li>
 <li>Gruppi, nomi e spese sono salvati sul tuo iPhone e nel tuo account iCloud.</li>
 <li>Un gruppo lo vedono solo le persone a cui mandi il link di invito.</li>
-<li>Per le notifiche dei gruppi condivisi, un breve testo passa per pochi giorni dal database pubblico di iCloud dell'app.</li>
+<li>Per le notifiche dei gruppi condivisi, un breve avviso cifrato passa per pochi giorni dal database pubblico di iCloud dell'app: solo i membri del gruppo possono leggerlo.</li>
 </ul>
 
 <h2>Dati salvati sul dispositivo e in iCloud</h2>
-<p>I gruppi che crei (nome del gruppo, nomi delle persone, spese, importi, date e valuta) sono salvati sul tuo iPhone. Se hai iCloud attivo, vengono sincronizzati anche nel tuo account iCloud privato tramite il servizio CloudKit di Apple, cos√¨ li ritrovi sugli altri tuoi dispositivi.</p>
-<p>Lo sviluppatore non ha accesso al tuo iCloud privato e non pu√≤ leggere questi dati.</p>
+<p>I gruppi che crei (nome del gruppo, nomi delle persone, spese, importi, date e valuta) sono salvati sul tuo iPhone. Se hai iCloud attivo, vengono sincronizzati anche nel tuo account iCloud privato tramite il servizio CloudKit di Apple, così li ritrovi sugli altri tuoi dispositivi.</p>
+<p>Lo sviluppatore non ha accesso al tuo iCloud privato e non può leggere questi dati.</p>
 
 <h2>Gruppi condivisi</h2>
-<p>Quando inviti qualcuno con il link, le persone che lo aprono possono vedere e modificare quel gruppo. Chiunque riceva il link pu√≤ entrare: condividilo solo con chi vuoi. Puoi togliere partecipanti o smettere di condividere in qualsiasi momento dalla schermata di condivisione.</p>
+<p>Quando inviti qualcuno con il link, le persone che lo aprono possono vedere e modificare quel gruppo. Chiunque riceva il link può entrare: condividilo solo con chi vuoi. Puoi togliere partecipanti o smettere di condividere in qualsiasi momento dalla schermata di condivisione.</p>
 <p>I dati di un gruppo condiviso restano nell'iCloud di chi l'ha creato e sono visibili solo ai partecipanti. Per sapere quale persona del gruppo sei, l'app salva nel gruppo un identificativo anonimo del tuo account iCloud, fornito da Apple e diverso per ogni app.</p>
 
 <h2>Notifiche</h2>
 <p>Quando qualcuno aggiunge, modifica o elimina una spesa, entra nel gruppo o segna un rimborso, gli altri membri ricevono una notifica. Per poterla recapitare anche ad app chiusa, l'app salva nel database pubblico di CloudKit un breve avviso con:</p>
 <ul>
-<li>il nome del gruppo;</li>
-<li>il testo della notifica (ad esempio "Luca ha aggiunto Cena ¬∑ 45,00 ‚Ç¨");</li>
-<li>l'identificativo anonimo iCloud di chi ha fatto la modifica e, per i rimborsi, di chi li riceve;</li>
+<li>il contenuto della notifica (nome del gruppo, autore, descrizione e importo della spesa), cifrato con una chiave che hanno solo i membri del gruppo: né lo sviluppatore né altri possono leggerlo;</li>
+<li>in chiaro, l'identificativo anonimo iCloud di chi ha fatto la modifica e, per i rimborsi, di chi li riceve;</li>
 <li>l'identificativo del gruppo e la data.</li>
 </ul>
-<p>Gli avvisi vengono cancellati automaticamente dopo circa 3 giorni. Servono solo a far arrivare la notifica e non vengono usati per nessun altro scopo. Puoi disattivare le notifiche in qualsiasi momento in Impostazioni ‚Ä∫ Notifiche ‚Ä∫ Splitto.</p>
+<p>Il testo viene decifrato e mostrato nella tua lingua solo sui dispositivi dei membri. Gli avvisi vengono cancellati automaticamente dopo circa 3 giorni. Servono solo a far arrivare la notifica e non vengono usati per nessun altro scopo. Puoi disattivare le notifiche in qualsiasi momento in Impostazioni › Notifiche › Splitto.</p>
+
+<h2>Codici di invito</h2>
+<p>Quando inviti qualcuno, l'app crea un codice di 8 caratteri e lo salva nel database pubblico di CloudKit insieme al link di invito di iCloud e all'identificativo del gruppo. Chi conosce il codice può entrare nel gruppo, come con il link. Il codice viene cancellato quando chi ha creato il gruppo lo elimina; se il proprietario smette di condividere il gruppo, il codice non porta più da nessuna parte.</p>
 
 <h2>Cosa l'app non fa</h2>
 <ul>
-<li>Non vende n√© cede dati a terzi.</li>
-<li>Non usa strumenti di analisi, pubblicit√† o tracciamento.</li>
-<li>Non chiede di creare un account: usa solo l'iCloud gi√† presente sul tuo iPhone.</li>
+<li>Non vende né cede dati a terzi.</li>
+<li>Non usa strumenti di analisi, pubblicità o tracciamento.</li>
+<li>Non chiede di creare un account: usa solo l'iCloud già presente sul tuo iPhone.</li>
 </ul>
 
 <h2>Cancellare i dati</h2>
 <ul>
-<li>Nell'app, in Impostazioni ‚Ä∫ Privacy ‚Ä∫ Elimina tutti i dati, cancelli i tuoi gruppi da questo iPhone e da iCloud, ed esci dai gruppi condivisi da altri.</li>
+<li>Nell'app, in Impostazioni › Privacy › Elimina tutti i dati, cancelli i tuoi gruppi da questo iPhone e da iCloud, ed esci dai gruppi condivisi da altri.</li>
 <li>Puoi eliminare un singolo gruppo o uscirne dal menu del gruppo.</li>
-<li>Disinstallando l'app i dati restano nel tuo iCloud finch√© non li elimini da Impostazioni ‚Ä∫ [il tuo nome] ‚Ä∫ iCloud ‚Ä∫ Gestisci spazio.</li>
+<li>Disinstallando l'app i dati restano nel tuo iCloud finché non li elimini da Impostazioni › [il tuo nome] › iCloud › Gestisci spazio.</li>
 </ul>
 
 <h2>Servizi di Apple</h2>
-<p>L'app usa iCloud e CloudKit di Apple per salvare e sincronizzare i dati e per le notifiche. Il trattamento da parte di Apple √® regolato dall'<a href="https://www.apple.com/legal/privacy/">informativa sulla privacy di Apple</a>.</p>
+<p>L'app usa iCloud e CloudKit di Apple per salvare e sincronizzare i dati e per le notifiche. Il trattamento da parte di Apple è regolato dall'<a href="https://www.apple.com/legal/privacy/">informativa sulla privacy di Apple</a>.</p>
 
 <h2>Contatti</h2>
 <p>Per domande su questa informativa: <a href="mailto:alesaandro.manzoli@gmail.com">alesaandro.manzoli@gmail.com</a></p>
@@ -64,7 +66,7 @@
 <hr>
 
 <h1 id="english">Privacy Policy</h1>
-<p class="muted">Splitto ¬∑ Last updated: November 5, 2026</p>
+<p class="muted">Splitto · Last updated: November 5, 2026</p>
 
 <p>Splitto helps friends, roommates and travel companions split expenses. This page explains what data the app uses, where it is stored, and who can see it.</p>
 
@@ -73,7 +75,7 @@
 <li>The app has no server of its own, shows no ads and does not track users.</li>
 <li>Groups, names and expenses are stored on your iPhone and in your iCloud account.</li>
 <li>A group is visible only to the people you send the invitation link to.</li>
-<li>For shared-group notifications, a short text is stored for a few days in the app's public iCloud database.</li>
+<li>For shared-group notifications, a short encrypted notice is stored for a few days in the app's public iCloud database: only group members can read it.</li>
 </ul>
 
 <h2>Data on your device and in iCloud</h2>
@@ -83,13 +85,16 @@
 <p>When you invite someone with the link, anyone who opens it can view and edit that group. Share it only with people you trust; you can remove participants or stop sharing at any time. Shared-group data stays in the creator's iCloud and is visible only to participants. To know which group member you are, the app stores an anonymous, app-specific iCloud identifier provided by Apple.</p>
 
 <h2>Notifications</h2>
-<p>When someone adds, edits or deletes an expense, joins the group or records a refund, the other members get a notification. To deliver it even when the app is closed, the app stores a short notice in the CloudKit public database containing the group name, the notification text (e.g. "Luca added Dinner ¬∑ ‚Ç¨45.00"), the anonymous iCloud identifier of the author and, for refunds, of the recipient, the group identifier and the date. Notices are deleted automatically after about 3 days and are used only to deliver notifications. You can turn notifications off in Settings ‚Ä∫ Notifications ‚Ä∫ Splitto.</p>
+<p>When someone adds, edits or deletes an expense, joins the group or records a refund, the other members get a notification. To deliver it even when the app is closed, the app stores a short notice in the CloudKit public database containing the notification content (group name, author, expense description and amount), encrypted with a key that only the group's members have, so neither the developer nor anyone else can read it; plus, unencrypted, the anonymous iCloud identifier of the author and, for refunds, of the recipient, the group identifier and the date. The text is decrypted and shown in your language only on the members' devices. Notices are deleted automatically after about 3 days and are used only to deliver notifications. You can turn notifications off in Settings › Notifications › Splitto.</p>
+
+<h2>Invite codes</h2>
+<p>When you invite someone, the app creates an 8-character code and stores it in the CloudKit public database together with the iCloud invitation link and the group identifier. Anyone who knows the code can join the group, just like with the link. The code is deleted when the group's creator deletes the group; if the owner stops sharing, the code no longer leads anywhere.</p>
 
 <h2>What the app does not do</h2>
 <p>It does not sell or share data with third parties, does not use analytics, advertising or tracking, and does not require an account beyond the iCloud account on your iPhone.</p>
 
 <h2>Deleting your data</h2>
-<p>Use Settings ‚Ä∫ Privacy ‚Ä∫ Delete all data in the app, or delete/leave a single group from its menu. Data in your iCloud can also be removed from Settings ‚Ä∫ [your name] ‚Ä∫ iCloud ‚Ä∫ Manage Storage.</p>
+<p>Use Settings › Privacy › Delete all data in the app, or delete/leave a single group from its menu. Data in your iCloud can also be removed from Settings › [your name] › iCloud › Manage Storage.</p>
 
 <h2>Apple services</h2>
 <p>The app uses Apple's iCloud and CloudKit. Apple's processing is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
