@@ -11,7 +11,7 @@
 <nav><a href="index.html">← Splitto</a> · <a href="#english">English</a></nav>
 
 <h1>Informativa sulla privacy</h1>
-<p class="muted">Splitto · Ultimo aggiornamento: 5 novembre 2026</p>
+<p class="muted">Splitto · Ultimo aggiornamento: 6 novembre 2026</p>
 
 <p>Splitto è un'app per dividere le spese tra amici, coinquilini e compagni di viaggio. Questa pagina spiega quali dati usa l'app, dove vengono salvati e chi può vederli.</p>
 
@@ -38,10 +38,10 @@
 <li>in chiaro, l'identificativo anonimo iCloud di chi ha fatto la modifica e, per i rimborsi, di chi li riceve;</li>
 <li>l'identificativo del gruppo e la data.</li>
 </ul>
-<p>Il testo viene decifrato e mostrato nella tua lingua solo sui dispositivi dei membri. Gli avvisi vengono cancellati automaticamente dopo circa 3 giorni. Servono solo a far arrivare la notifica e non vengono usati per nessun altro scopo. Puoi disattivare le notifiche in qualsiasi momento in Impostazioni › Notifiche › Splitto.</p>
+<p>Il testo viene decifrato e mostrato nella tua lingua solo sui dispositivi dei membri. Gli avvisi vengono cancellati dopo circa 3 giorni, alla prima riapertura dell'app da parte di chi li ha mandati (solo l'autore può cancellarli), e subito se l'autore usa «Elimina tutti i dati». Servono solo a far arrivare la notifica e non vengono usati per nessun altro scopo. Puoi disattivare le notifiche in qualsiasi momento in Impostazioni › Notifiche › Splitto.</p>
 
 <h2>Codici di invito</h2>
-<p>Quando inviti qualcuno, l'app crea un codice di 8 caratteri e lo salva nel database pubblico di CloudKit insieme al link di invito di iCloud e all'identificativo del gruppo. Chi conosce il codice può entrare nel gruppo, come con il link. Il codice viene cancellato quando chi ha creato il gruppo lo elimina; se il proprietario smette di condividere il gruppo, il codice non porta più da nessuna parte.</p>
+<p>Quando inviti qualcuno, l'app crea un codice di 8 caratteri. Nel database pubblico di CloudKit non vengono salvati né il codice né il link in chiaro: c'è un record il cui nome è ricavato dal codice e che contiene il link di invito di iCloud e l'identificativo del gruppo cifrati con una chiave ricavata anch'essa dal codice. Chi conosce il codice può entrare nel gruppo, come con il link; chi non lo conosce vede solo dati cifrati. Il codice viene cancellato quando chi ha creato il gruppo lo elimina; se il proprietario smette di condividere il gruppo, il codice non porta più da nessuna parte.</p>
 
 <h2>Cosa l'app non fa</h2>
 <ul>
@@ -52,7 +52,7 @@
 
 <h2>Cancellare i dati</h2>
 <ul>
-<li>Nell'app, in Impostazioni › Privacy › Elimina tutti i dati, cancelli i tuoi gruppi da questo iPhone e da iCloud, ed esci dai gruppi condivisi da altri.</li>
+<li>Nell'app, in Impostazioni › Privacy › Elimina tutti i dati, cancelli i tuoi gruppi da questo iPhone e da iCloud, esci dai gruppi condivisi da altri e cancelli gli avvisi che hai mandato e le iscrizioni alle notifiche. Per i gruppi condivisi serve la connessione: se manca, l'app ti avvisa che non tutto è stato eliminato.</li>
 <li>Puoi eliminare un singolo gruppo o uscirne dal menu del gruppo.</li>
 <li>Disinstallando l'app i dati restano nel tuo iCloud finché non li elimini da Impostazioni › [il tuo nome] › iCloud › Gestisci spazio.</li>
 </ul>
@@ -66,7 +66,7 @@
 <hr>
 
 <h1 id="english">Privacy Policy</h1>
-<p class="muted">Splitto · Last updated: November 5, 2026</p>
+<p class="muted">Splitto · Last updated: November 6, 2026</p>
 
 <p>Splitto helps friends, roommates and travel companions split expenses. This page explains what data the app uses, where it is stored, and who can see it.</p>
 
@@ -85,10 +85,10 @@
 <p>When you invite someone with the link, anyone who opens it can view and edit that group. Share it only with people you trust; you can remove participants or stop sharing at any time. Shared-group data stays in the creator's iCloud and is visible only to participants. To know which group member you are, the app stores an anonymous, app-specific iCloud identifier provided by Apple.</p>
 
 <h2>Notifications</h2>
-<p>When someone adds, edits or deletes an expense, joins the group or records a refund, the other members get a notification. To deliver it even when the app is closed, the app stores a short notice in the CloudKit public database containing the notification content (group name, author, expense description and amount), encrypted with a key that only the group's members have, so neither the developer nor anyone else can read it; plus, unencrypted, the anonymous iCloud identifier of the author and, for refunds, of the recipient, the group identifier and the date. The text is decrypted and shown in your language only on the members' devices. Notices are deleted automatically after about 3 days and are used only to deliver notifications. You can turn notifications off in Settings › Notifications › Splitto.</p>
+<p>When someone adds, edits or deletes an expense, joins the group or records a refund, the other members get a notification. To deliver it even when the app is closed, the app stores a short notice in the CloudKit public database containing the notification content (group name, author, expense description and amount), encrypted with a key that only the group's members have, so neither the developer nor anyone else can read it; plus, unencrypted, the anonymous iCloud identifier of the author and, for refunds, of the recipient, the group identifier and the date. The text is decrypted and shown in your language only on the members' devices. Notices are deleted after about 3 days, the next time their author opens the app (only the author can delete them), and immediately if the author uses “Delete All Data”. They are used only to deliver notifications. You can turn notifications off in Settings › Notifications › Splitto.</p>
 
 <h2>Invite codes</h2>
-<p>When you invite someone, the app creates an 8-character code and stores it in the CloudKit public database together with the iCloud invitation link and the group identifier. Anyone who knows the code can join the group, just like with the link. The code is deleted when the group's creator deletes the group; if the owner stops sharing, the code no longer leads anywhere.</p>
+<p>When you invite someone, the app creates an 8-character code. Neither the code nor the link is stored in plain form in the CloudKit public database: there is a record whose name is derived from the code and which holds the iCloud invitation link and the group identifier encrypted with a key that is also derived from the code. Anyone who knows the code can join the group, just like with the link; anyone who doesn't sees only encrypted data. The code is deleted when the group's creator deletes the group; if the owner stops sharing, the code no longer leads anywhere.</p>
 
 <h2>What the app does not do</h2>
 <p>It does not sell or share data with third parties, does not use analytics, advertising or tracking, and does not require an account beyond the iCloud account on your iPhone.</p>
