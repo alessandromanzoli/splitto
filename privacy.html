@@ -11,34 +11,45 @@
 <nav><a href="index.html">← Splitto</a> · <a href="#english">English</a></nav>
 
 <h1>Informativa sulla privacy</h1>
-<p class="muted">Splitto · Ultimo aggiornamento: 6 novembre 2026</p>
+<p class="muted">Splitto · Ultimo aggiornamento: 11 novembre 2026</p>
 
 <p>Splitto è un'app per dividere le spese tra amici, coinquilini e compagni di viaggio. Questa pagina spiega quali dati usa l'app, dove vengono salvati e chi può vederli.</p>
 
 <h2>In breve</h2>
 <ul>
 <li>L'app non ha un server proprio, non mostra pubblicità e non traccia gli utenti.</li>
-<li>Gruppi, nomi e spese sono salvati sul tuo iPhone e nel tuo account iCloud.</li>
+<li>Gruppi, nomi, foto delle persone e spese sono salvati sul tuo iPhone e nel tuo account iCloud.</li>
 <li>Un gruppo lo vedono solo le persone a cui mandi il link di invito.</li>
+<li>La fotocamera serve solo a leggere uno scontrino: la foto resta sul telefono e non viene salvata.</li>
 <li>Per le notifiche dei gruppi condivisi, un breve avviso cifrato passa per pochi giorni dal database pubblico di iCloud dell'app: solo i membri del gruppo possono leggerlo.</li>
 </ul>
 
 <h2>Dati salvati sul dispositivo e in iCloud</h2>
-<p>I gruppi che crei (nome del gruppo, nomi delle persone, spese, importi, date e valuta) sono salvati sul tuo iPhone. Se hai iCloud attivo, vengono sincronizzati anche nel tuo account iCloud privato tramite il servizio CloudKit di Apple, così li ritrovi sugli altri tuoi dispositivi.</p>
+<p>I gruppi che crei (nome del gruppo, nomi ed eventuali foto delle persone, spese con importo, data, categoria e quote, valuta) sono salvati sul tuo iPhone. Se hai iCloud attivo, vengono sincronizzati anche nel tuo account iCloud privato tramite il servizio CloudKit di Apple, così li ritrovi sugli altri tuoi dispositivi.</p>
 <p>Lo sviluppatore non ha accesso al tuo iCloud privato e non può leggere questi dati.</p>
 
 <h2>Gruppi condivisi</h2>
 <p>Quando inviti qualcuno con il link, le persone che lo aprono possono vedere e modificare quel gruppo. Chiunque riceva il link può entrare: condividilo solo con chi vuoi. Puoi togliere partecipanti o smettere di condividere in qualsiasi momento dalla schermata di condivisione.</p>
 <p>I dati di un gruppo condiviso restano nell'iCloud di chi l'ha creato e sono visibili solo ai partecipanti. Per sapere quale persona del gruppo sei, l'app salva nel gruppo un identificativo anonimo del tuo account iCloud, fornito da Apple e diverso per ogni app.</p>
 
+<h2>Foto delle persone</h2>
+<p>Puoi scegliere una foto per ogni persona di un gruppo. La scegli con il selettore di foto di iOS: l'app riceve solo la foto che scegli e non ha accesso al resto della tua libreria. La foto viene ridotta a una piccola immagine quadrata e salvata nel gruppo insieme al nome: la vedono i partecipanti di quel gruppo e nessun altro. Puoi toglierla in qualsiasi momento da «Nome e persone».</p>
+
+<h2>Scontrini e fotocamera</h2>
+<p>Quando tocchi «Scansiona scontrino», l'app usa la fotocamera per leggere importo, negozio e data. Il testo viene riconosciuto sul tuo iPhone: la foto non viene salvata e non viene mandata da nessuna parte, né allo sviluppatore né ad Apple. Il permesso per la fotocamera viene chiesto solo la prima volta che usi questa funzione e puoi revocarlo nelle impostazioni di iOS, alla voce Splitto.</p>
+
 <h2>Notifiche</h2>
 <p>Quando qualcuno aggiunge, modifica o elimina una spesa, entra nel gruppo o segna un rimborso, gli altri membri ricevono una notifica. Per poterla recapitare anche ad app chiusa, l'app salva nel database pubblico di CloudKit un breve avviso con:</p>
 <ul>
 <li>il contenuto della notifica (nome del gruppo, autore, descrizione e importo della spesa), cifrato con una chiave che hanno solo i membri del gruppo: né lo sviluppatore né altri possono leggerlo;</li>
-<li>in chiaro, l'identificativo anonimo iCloud di chi ha fatto la modifica e, per i rimborsi, di chi li riceve;</li>
+<li>in chiaro, l'identificativo anonimo iCloud di chi ha fatto la modifica e, per i rimborsi e i promemoria, di chi li riceve;</li>
 <li>l'identificativo del gruppo e la data.</li>
 </ul>
 <p>Il testo viene decifrato e mostrato nella tua lingua solo sui dispositivi dei membri. Gli avvisi vengono cancellati dopo circa 3 giorni, alla prima riapertura dell'app da parte di chi li ha mandati (solo l'autore può cancellarli), e subito se l'autore usa «Elimina tutti i dati». Servono solo a far arrivare la notifica e non vengono usati per nessun altro scopo. Puoi disattivare le notifiche in qualsiasi momento in Impostazioni › Notifiche › Splitto.</p>
+<p>Con la campanella accanto a un pagamento puoi mandare un promemoria a chi deve ancora pagare: viaggia come gli altri avvisi, con importo e nomi cifrati, ed è indirizzato solo a quella persona. Per lo stesso pagamento ne parte al massimo uno al giorno.</p>
+
+<h2>Widget</h2>
+<p>Per mostrare il saldo sulla schermata Home, l'app salva sul tuo iPhone un riassunto dei gruppi (nomi, importi e una copia ridotta delle foto) in uno spazio che condivide solo con il proprio widget. Il riassunto non lascia il dispositivo. Tieni presente che chi guarda il tuo schermo vede quello che il widget mostra.</p>
 
 <h2>Codici di invito</h2>
 <p>Quando inviti qualcuno, l'app crea un codice di 8 caratteri. Nel database pubblico di CloudKit non vengono salvati né il codice né il link in chiaro: c'è un record il cui nome è ricavato dal codice e che contiene il link di invito di iCloud e l'identificativo del gruppo cifrati con una chiave ricavata anch'essa dal codice. Chi conosce il codice può entrare nel gruppo, come con il link; chi non lo conosce vede solo dati cifrati. Il codice viene cancellato quando chi ha creato il gruppo lo elimina; se il proprietario smette di condividere il gruppo, il codice non porta più da nessuna parte.</p>
@@ -66,26 +77,36 @@
 <hr>
 
 <h1 id="english">Privacy Policy</h1>
-<p class="muted">Splitto · Last updated: November 6, 2026</p>
+<p class="muted">Splitto · Last updated: November 11, 2026</p>
 
 <p>Splitto helps friends, roommates and travel companions split expenses. This page explains what data the app uses, where it is stored, and who can see it.</p>
 
 <h2>Summary</h2>
 <ul>
 <li>The app has no server of its own, shows no ads and does not track users.</li>
-<li>Groups, names and expenses are stored on your iPhone and in your iCloud account.</li>
+<li>Groups, names, people's photos and expenses are stored on your iPhone and in your iCloud account.</li>
 <li>A group is visible only to the people you send the invitation link to.</li>
+<li>The camera is used only to read a receipt: the photo stays on the phone and is not saved.</li>
 <li>For shared-group notifications, a short encrypted notice is stored for a few days in the app's public iCloud database: only group members can read it.</li>
 </ul>
 
 <h2>Data on your device and in iCloud</h2>
-<p>Groups you create (group name, people's names, expenses, amounts, dates and currency) are stored on your iPhone and, if iCloud is on, synced to your private iCloud account through Apple's CloudKit service. The developer has no access to your private iCloud data.</p>
+<p>Groups you create (group name, people's names and optional photos, expenses with amount, date, category and shares, currency) are stored on your iPhone and, if iCloud is on, synced to your private iCloud account through Apple's CloudKit service. The developer has no access to your private iCloud data.</p>
 
 <h2>Shared groups</h2>
 <p>When you invite someone with the link, anyone who opens it can view and edit that group. Share it only with people you trust; you can remove participants or stop sharing at any time. Shared-group data stays in the creator's iCloud and is visible only to participants. To know which group member you are, the app stores an anonymous, app-specific iCloud identifier provided by Apple.</p>
 
+<h2>People's photos</h2>
+<p>You can choose a photo for each person in a group. You pick it with the iOS photo picker: the app only receives the photo you choose and has no access to the rest of your library. The photo is reduced to a small square image and stored in the group with the name: it is visible to that group's participants and no one else. You can remove it at any time from “Name and People”.</p>
+
+<h2>Receipts and camera</h2>
+<p>When you tap “Scan Receipt”, the app uses the camera to read the amount, shop and date. The text is recognised on your iPhone: the photo is not saved and is not sent anywhere, neither to the developer nor to Apple. Camera permission is requested only the first time you use this feature, and you can revoke it in the iOS Settings, under Splitto.</p>
+
 <h2>Notifications</h2>
-<p>When someone adds, edits or deletes an expense, joins the group or records a refund, the other members get a notification. To deliver it even when the app is closed, the app stores a short notice in the CloudKit public database containing the notification content (group name, author, expense description and amount), encrypted with a key that only the group's members have, so neither the developer nor anyone else can read it; plus, unencrypted, the anonymous iCloud identifier of the author and, for refunds, of the recipient, the group identifier and the date. The text is decrypted and shown in your language only on the members' devices. Notices are deleted after about 3 days, the next time their author opens the app (only the author can delete them), and immediately if the author uses “Delete All Data”. They are used only to deliver notifications. You can turn notifications off in Settings › Notifications › Splitto.</p>
+<p>When someone adds, edits or deletes an expense, joins the group or records a refund, the other members get a notification. To deliver it even when the app is closed, the app stores a short notice in the CloudKit public database containing the notification content (group name, author, expense description and amount), encrypted with a key that only the group's members have, so neither the developer nor anyone else can read it; plus, unencrypted, the anonymous iCloud identifier of the author and, for refunds and reminders, of the recipient, the group identifier and the date. The text is decrypted and shown in your language only on the members' devices. Notices are deleted after about 3 days, the next time their author opens the app (only the author can delete them), and immediately if the author uses “Delete All Data”. They are used only to deliver notifications. You can turn notifications off in Settings › Notifications › Splitto. With the bell next to a payment you can send a reminder to the person who still has to pay: it travels like the other notices, with amount and names encrypted, and is addressed only to that person. At most one reminder a day is sent for the same payment.</p>
+
+<h2>Widget</h2>
+<p>To show the balance on the Home Screen, the app saves a summary of your groups on your iPhone (names, amounts and a reduced copy of the photos) in a space it shares only with its own widget. The summary never leaves the device. Keep in mind that anyone looking at your screen sees what the widget shows.</p>
 
 <h2>Invite codes</h2>
 <p>When you invite someone, the app creates an 8-character code. Neither the code nor the link is stored in plain form in the CloudKit public database: there is a record whose name is derived from the code and which holds the iCloud invitation link and the group identifier encrypted with a key that is also derived from the code. Anyone who knows the code can join the group, just like with the link; anyone who doesn't sees only encrypted data. The code is deleted when the group's creator deletes the group; if the owner stops sharing, the code no longer leads anywhere.</p>
